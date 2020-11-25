@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.sellix.io/static/js/embed.js" ></script>
+    <title>Zues Fraud Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Zues Fraud Shop</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="home-prods">
+            <div class="container">
+                <div class="row prod-indi">
+                    <div class="col-md-6 prod-indi__img-outer">
+                        <div class="prod-indi__img">
+                            Dumps
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h1 class="prod-indi__title" id="Title">Dumps</h1>
+                        <p class="prod-indi__lead" id="description">Dumps come with both tracks 1 & 2 as well as pin and all range in banlance. But, all are high balance $1k - $1.5k</p>
+
+                        <hr>
+                        <h3 class="prod-indi__price" id="price"> $45.00 <small>* All inclusive</small></h3>
+                        <a data-sellix-product="5fb86fe165195" class="btn btn-success btn-lg">Purchase</a>
+                        <script>
+
+                        function price() {
+                          var x = document.getElementById("price").textContent;
+
+                          document.getElementById("theprice").innerHTML = x;
+                          let r = Math.random().toString(36).substr(2, 5);
+                          document.getElementById("string").innerHTML = r;
+
+                        }
+
+                      </script>
+                        <div id="cashapp" class="overlay">
+                          <div class="popup">
+                            <h2>Cashapp Payment</h2>
+                            <a class="close" href="#">&times;</a>
+                            <div class="content" id="content">
+                              Please send <span class="pricecashapp" id="theprice"> </span> to $ibxswipes! Please include this key in payment description <span id="string" class="warning"> </span>
+
+                            </div>
+
+                            <center>
+<img class="loader" src="./img/200.gif"> <h4 class="warning"> Waiting for payment </h4>
+                          </center>
+                          </div>
+                        </div>
+                        <div id="purchase" class="overlay">
+                          <div class="popup">
+                            <h2>Cashapp Payment</h2>
+                            <a class="close" href="#">&times;</a>
+                            <div class="content" id="content">
+
+                            </div>
+
+
+                              <h4 class="warning">Please enter the following details </h4>
+
+                            <input class="warning" placeholder="Email" type="text" id="fname" name="fname"><br><br>
+
+                            <input type="text" placeholder="$cashtag" id="lname" name="lname"><br><br>
+                          <a class="btn btn-success btn-lg"  href="#cashapp">Proceed</a>
+
+                          </div>
+                        </div>
+                        <a class="btn btn-success btn-lg" onclick="price()" href="#purchase">Cashapp</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; copyrights 2020
+    </footer>
+</body>
+
+
+
+</html>
