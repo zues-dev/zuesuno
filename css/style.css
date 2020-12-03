@@ -637,6 +637,11 @@ pre code {
 {
   width: 20vh;
 }
+.telegram
+{
+ float: right;
+ height: 7vh;
+}
 @media (min-width: 576px) {
   .container, .container-sm {
     max-width: 540px;
